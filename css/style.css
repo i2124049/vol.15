@@ -1,0 +1,139 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'PT Serif', serif;
+    font-family: 'Noto Serif JP', serif;
+
+    line-height: 1.5;
+}
+*{
+    text-decoration: none;
+   margin: 0;
+    padding: 0;
+    list-style: none;
+    box-sizing: border-box;
+}
+a{
+    transition: 0.3s;
+}
+a:hover{
+    opacity: 0.2;
+}
+img{
+    display: block;
+}
+
+
+
+.page-header,
+.page-hero,
+.page-content,
+.pagefooter{
+     /* min-width: 1280px;  */
+    width: 100%;
+}
+.page-hero{
+    width: 1440px;
+    height: 780px;
+}
+
+.page-header{
+    position: fixed;
+    z-index: 10;
+    top: 0;
+    left: 0;
+    padding: 16px 0 24px;
+    background-color: #fff;
+}
+.page-header__inner,
+.page-conent__inner{
+    box-sizing: content-box;
+}
+
+.page-header__inner{
+    margin: 0 auto;
+    padding: 0 112px;
+}
+.page-header__inner{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+.page-header .logo,
+.page-footer .logo {
+    width: 256px;
+}
+
+.global-nav{
+     display: flex;
+     flex-wrap: wrap;
+     justify-content: space-between;
+    align-items: flex-end;
+}
+
+.menu-list{
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    font-size: 24px;
+}
+.menu-list__item{
+    display: block;
+    text-decoration: none;
+    margin: 0px 64px 0px 64px;
+}
+
+.menu-list__item a{
+    color: black;
+}
+
+.page-heading{
+    text-align: center;
+    padding-bottom: 4px;
+    max-width: 400px;
+    margin: 24px auto 0px;
+}
+
+.task-list{
+    display: flex;
+    justify-content: space-around;
+  flex-wrap: wrap;;
+  background-color: #e0e0e0;
+  max-width: 1440px;
+  padding: 24px;
+  margin: 0 ;
+}
+
+.task-list__item{
+    margin-bottom: 16px;
+}
+.task-list__item img{
+    margin-bottom: 16px;
+    max-height: 350px;
+    max-width: 630px;
+}
+
+.feature-img .feature-message{
+    display: inline-block;
+  vertical-align:middle;
+}
+
+.feature-img{
+    margin-left: 112px;
+  width: 470px;
+  height: 700px;
+  float: left;
+}
+.feature-message{
+   padding-left: 800px;
+   margin-right: 112px;
+}
+
+@media all and (min-width: 480px) and (max-width: 768px) { }
+@media all and (max-width: 480px) { 
+    .page-heading { color: #7F9916}
+    .page-content { width: 92%;}
+    
+    .global-nav { display: none;}
+} 
